@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>CosRim_AirCoolingSystem</defName>
+		<label>air cooling system</label>
+		<description>TODO</description>
+    	<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/AirConditioner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4, 4)</drawSize>
+		</graphicData>
+		<uiIconPath>CosmoRim/Buildings/AirConditioner</uiIconPath>
+		<uiIconScale>1.0</uiIconScale>
+		<size>(2, 2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1</fillPercent>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<hasInteractionCell>True</hasInteractionCell>
+    	<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<castEdgeShadows>true</castEdgeShadows>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<staticSunShadowHeight>0.4</staticSunShadowHeight>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Flammability>0.3</Flammability>
+			<Beauty>0</Beauty>
+		</statBases>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>12</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CosmoCore.CompProperties_MachineSounds">
+				<ambientSound>CosRim_Sound_ThumperAmbient</ambientSound>
+				<startupSound>CosRim_Sound_ThumperStartup</startupSound>
+				<shutdownSound>CosRim_Sound_ThumperShutdown</shutdownSound>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>CosRim_VaultEnvironmentalSystems</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatEnvironmental</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>

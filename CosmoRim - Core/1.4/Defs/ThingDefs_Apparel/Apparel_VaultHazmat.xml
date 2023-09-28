@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<ThingDef ParentName="CosmoRim_UniformBodyFabricatedBase">
+		<defName>CosmoRim_VaultHazmatSuit</defName>
+		<label>vault hazmat suit</label>
+		<description>A full body hazardous materials suit. Combined with hood protects the wearer from environmental dangers.</description>
+		<graphicData>
+			<texPath>CosmoRim/Apparel/VaultHazmat/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>CosRim_VaultArmoury</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<tags Inherit="False">
+				<li>VaulterApparel</li>
+				<li>VaulterHazmat</li>
+			</tags>
+			<wornGraphicPath>CosmoRim/Apparel/VaultHazmat/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="CosmoRim_UniformHeadwearFabricatedBase">
+		<defName>CosmoRim_VaultHazmatHood</defName>
+		<label>vault hazmat hood</label>
+		<description>A full head hazardous materials hood. Combined with suit protects the wearer from environmental dangers.</description>
+		<graphicData>
+			<texPath>CosmoRim/Apparel/VaultHazmat/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>CosRim_VaultArmoury</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<tags Inherit="False">
+				<li>VaulterApparel</li>
+				<li>VaulterHazmat</li>
+			</tags>
+			<wornGraphicPath>CosmoRim/Apparel/VaultHazmat/Head</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+</Defs>

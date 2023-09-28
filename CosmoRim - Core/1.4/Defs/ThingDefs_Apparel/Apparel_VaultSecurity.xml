@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<ThingDef ParentName="CosmoRim_LightArmorFabricatedBase">
+		<defName>CosmoRim_VaultSecurityVest</defName>
+		<label>vault security vest</label>
+		<description>An armoured vest designed for vault security, not the best but it does what it needs to.</description>
+		<graphicData>
+			<texPath>CosmoRim/Apparel/VaultSecurity/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(180, 180, 180)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>CosRim_VaultArmoury</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="False">
+				<li>VaulterApparel</li>
+				<li>VaulterSecurity</li>
+			</tags>
+			<wornGraphicPath>CosmoRim/Apparel/VaultSecurity/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(180, 180, 180)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>CosmoRim_Apparel</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef ParentName="CosmoRim_LightHelmetFabricatedBase">
+		<defName>CosmoRim_VaultSecurityHelmet</defName>
+		<label>vault security helmet</label>
+		<description>An armoured helmet designed for vault security, not the best but it does what it needs to.</description>
+		<graphicData>
+			<texPath>CosmoRim/Apparel/VaultSecurity/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(180, 180, 180)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>CosRim_VaultArmoury</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="False">
+				<li>VaulterApparel</li>
+				<li>VaulterSecurity</li>
+			</tags>
+			<wornGraphicPath>CosmoRim/Apparel/VaultSecurity/Head</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(180, 180, 180)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>CosmoRim_Apparel</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

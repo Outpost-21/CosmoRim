@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>CosRim_AirGenerator</defName>
+		<label>air generator</label>
+		<description>A compact renewable energy source, using micro carbon fiber tubes to generate electricity from the humidity in the air.</description>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/AirGenerator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>CosmoRim/Buildings/AirGenerator_MenuIcon</uiIconPath>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2200</WorkToBuild>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<hasInteractionCell>false</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CosRimAir.Comp_PowerPlantAir</compClass>
+				<basePowerConsumption>-1000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+		</comps>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>CosRimAir.PlaceWorker_AirGenerator</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+
+</Defs>

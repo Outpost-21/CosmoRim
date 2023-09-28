@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>CosRim_InsectoidThumper</defName>
+		<label>insectoid thumper</label>
+		<description>Strikes the ground with enough force to repel burrowing invaders so that they surface elsewhere by making them think there's a much larger creature above.</description>
+		<thingClass>CosmoCore.Building_Thumper</thingClass>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/InsectoidThumper</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<uiIconPath>CosmoRim/Buildings/InsectoidThumper_UI</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+		<designatorDropdown>CosRim_ThumperDropdown</designatorDropdown>
+		<size>(3,3)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1</fillPercent>
+		<staticSunShadowHeight>0.4</staticSunShadowHeight>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>
+		<castEdgeShadows>true</castEdgeShadows>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>12000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<costList>
+			<Steel>300</Steel>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>6000</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<specialDisplayRadius>32.4</specialDisplayRadius>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>CosRim_Sound_ThumperAmbient</soundAmbient>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>CosRim_VaultDefenceSystems</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatSecurity</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>CosRim_InsectoidThumperProp</defName>
+		<label>insectoid thumper (prop)</label>
+		<description>Strikes the ground with enough force to repel burrowing invaders for quite some distance, this does however mean they tend to pile up nearby waiting to attack the moment it stops working. [NON FUNCTIONAL VERSION FOR VISUALS]</description>
+		<thingClass>CosmoCore.Building_Thumper</thingClass>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/InsectoidThumper</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<uiIconPath>CosmoRim/Buildings/InsectoidThumper_UI</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+		<designatorDropdown>CosRim_ThumperDropdown</designatorDropdown>
+		<size>(3,3)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>5</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>CosRim_Sound_ThumperAmbient</soundAmbient>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>CosRim_VaultDefenceSystems</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatSecurity</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

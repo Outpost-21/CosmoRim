@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<ThingDef ParentName="CosmoRim_UniformBodyFabricatedBase">
+		<defName>CosmoRim_VaultSuit</defName>
+		<label>vault suit</label>
+		<description>A comfortable full body suit worn by vaulters, designed to insulate against both warm and cold, as well as providing some mild protection.</description>
+		<graphicData>
+			<texPath>CosmoRim/Apparel/VaultSuit/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(90, 166, 125)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>CosRim_VaultArmoury</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<tags Inherit="False">
+				<li>VaulterApparel</li>
+				<li>VaulterStandard</li>
+			</tags>
+			<wornGraphicPath>CosmoRim/Apparel/VaultSuit/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(90, 166, 125)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+</Defs>

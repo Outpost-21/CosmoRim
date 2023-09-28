@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CosmoRimVaulterGunBase">
+		<defName>CosRim_PulseRifle</defName>
+		<label>pulse rifle</label>
+		<description>TODO</description>
+		<graphicData>
+			<texPath>CosmoRim/Weapons/Ranged/PulseRifle</texPath>
+		</graphicData>
+		<soundInteract>CosRim_RifleEquip</soundInteract>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.61</AccuracyTouch>
+			<AccuracyShort>0.73</AccuracyShort>
+			<AccuracyMedium>0.66</AccuracyMedium>
+			<AccuracyLong>0.53</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CosRim_PulseRifleShot</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>32</range>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>CosRim_LaserRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<costList>
+            <Steel>60</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>CosRim_PulseRifleShot</defName>
+		<label>pulse</label>
+		<graphicData>
+			<texPath>CosmoRim/Projectiles/PlasmaShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<stoppingPower>0.35</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

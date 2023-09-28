@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TabulaRasa.DesignatorSubCategoryDef>
+		<defName>CosRim_SubCatStructural</defName>
+		<label>Structural</label>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+	</TabulaRasa.DesignatorSubCategoryDef>
+
+	<TabulaRasa.DesignatorSubCategoryDef>
+		<defName>CosRim_SubCatProduction</defName>
+		<label>Production</label>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+	</TabulaRasa.DesignatorSubCategoryDef>
+
+	<TabulaRasa.DesignatorSubCategoryDef>
+		<defName>CosRim_SubCatPower</defName>
+		<label>Power</label>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+	</TabulaRasa.DesignatorSubCategoryDef>
+
+	<TabulaRasa.DesignatorSubCategoryDef>
+		<defName>CosRim_SubCatSecurity</defName>
+		<label>Security</label>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+	</TabulaRasa.DesignatorSubCategoryDef>
+
+	<TabulaRasa.DesignatorSubCategoryDef>
+		<defName>CosRim_SubCatEnvironmental</defName>
+		<label>Environmental</label>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+	</TabulaRasa.DesignatorSubCategoryDef>
+
+	<TabulaRasa.DesignatorSubCategoryDef>
+		<defName>CosRim_SubCatRobotics</defName>
+		<label>Robotics</label>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+	</TabulaRasa.DesignatorSubCategoryDef>
+
+	<TabulaRasa.DesignatorSubCategoryDef>
+		<defName>CosRim_SubCatMisc</defName>
+		<label>Misc</label>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+	</TabulaRasa.DesignatorSubCategoryDef>
+
+	<TabulaRasa.DesignatorSubCategoryDef>
+		<defName>CosRim_SubCatDecoration</defName>
+		<label>Decoration</label>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+	</TabulaRasa.DesignatorSubCategoryDef>
+
+	<TabulaRasa.DesignatorSubCategoryDef>
+		<defName>CosRim_SubCatFurnitureVault</defName>
+		<label>Furniture (Vault)</label>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+	</TabulaRasa.DesignatorSubCategoryDef>
+
+</Defs>

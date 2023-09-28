@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>CosRim_ResearchTab</defName>
+		<label>CosmoRim</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef Name="CosRim_ResearchBaseMain" Abstract="True">
+		<tab>CosRim_ResearchTab</tab>
+		<baseCost>1000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+</Defs>

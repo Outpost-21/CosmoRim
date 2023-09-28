@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>CosRim_Sound_ThumperAmbient</defName>
+		<sustain>True</sustain>  
+		<context>MapOnly</context>
+		<eventNames />
+    	<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>CosmoRim/ThumperAmbient</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>1.0</min>        
+					<max>2.5</max>
+				</volumeRange>  
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>CosRim_Sound_ThumperHit</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>CosmoRim/ThumperHit</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>10.0</min>        
+					<max>20.0</max>
+				</volumeRange>  
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>CosRim_Sound_ThumperStartup</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>CosmoRim/ThumperStartup</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>10.0</min>        
+					<max>20.0</max>
+				</volumeRange>  
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>CosRim_Sound_ThumperShutdown</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>CosmoRim/ThumperShutDown</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>10.0</min>        
+					<max>20.0</max>
+				</volumeRange>  
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>CosRim_Sound_RadarPing</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>CosmoRim/BeaconPing</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>10.0</min>        
+					<max>20.0</max>
+				</volumeRange>  
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase" Name="CosmoRimVaultWallBase" Abstract="True">
+		<description>An impassable wall. Capable of holding up a roof. Doubles as a power conduit. Generally tougher to destroy than a normal wall of the same material.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>0.1</Flammability>
+			<MeditationFocusStrength>0.2</MeditationFocusStrength>
+		</statBases>
+		<costList>
+			<Steel>1</Steel>
+		</costList>
+		<costStuffCount>7</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<building>
+			<paintable>true</paintable>
+			<isInert>true</isInert>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+			<relatedBuildCommands>
+				<!-- <li>CosRim_ExteriorVaultDoor</li>
+				<li>CosRim_InteriorVaultDoor</li> -->
+			</relatedBuildCommands>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_Conduit</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+				</focusTypes>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>1.25</multiplier>
+			</li>
+		</damageMultipliers>
+		<researchPrerequisites>
+			<li>CosRim_VaultConstruction</li>
+		</researchPrerequisites>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatStructural</subCategory>
+				<showOnlyInCategory>false</showOnlyInCategory>
+			</li>
+			<li Class="TabulaRasa.DefModExt_SelfPoweredDoor" />
+		</modExtensions>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="CosmoRimVaultWallBase">
+		<defName>CosRim_VaultWall</defName>
+		<label>vault wall</label>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/VaultWallCurved_Atlas</texPath>
+		</graphicData>
+		<uiIconPath>CosmoRim/Buildings/VaultWallCurved_MenuIcon</uiIconPath>
+	</ThingDef>
+
+	<ThingDef ParentName="CosmoRimVaultWallBase">
+		<defName>CosRim_VaultWallInv</defName>
+		<label>vault wall (inverted)</label>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/VaultWallCurvedInv_Atlas</texPath>
+		</graphicData>
+		<uiIconPath>CosmoRim/Buildings/VaultWallCurvedInv_MenuIcon</uiIconPath>
+	</ThingDef>
+
+</Defs>

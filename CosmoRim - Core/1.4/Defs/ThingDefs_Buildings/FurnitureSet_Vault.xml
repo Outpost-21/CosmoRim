@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== 1x1 Table ==================== -->
+
+	<ThingDef ParentName="CosRimTableGatherSpotBase">
+		<defName>CosRim_Vault1x1Table</defName>
+		<label>vault table (1x1)</label>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultTableSmall</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<size>(1, 1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<Mass>15</Mass>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_ExtraGraphics">
+				<extraGraphics>
+					<li>
+						<label>Defualt</label>
+						<path>CosmoRim/Buildings/Furniture/VaultTableSmall</path>
+					</li>
+					<li>
+						<label>Outlander</label>
+						<path>CosmoRim/Buildings/Furniture/VaultTableSmallClutterA</path>
+					</li>
+				</extraGraphics>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== 2x1 Table ==================== -->
+
+	<ThingDef ParentName="CosRimTableGatherSpotBase">
+		<defName>CosRim_Vault2x1Table</defName>
+		<label>vault table (2x1)</label>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultTableMedium</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<size>(2, 1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<Mass>15</Mass>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_ExtraGraphics">
+				<extraGraphics>
+					<li>
+						<label>Default</label>
+						<path>CosmoRim/Buildings/Furniture/VaultTableMedium</path>
+					</li>
+					<li>
+						<label>Outlander</label>
+						<path>CosmoRim/Buildings/Furniture/VaultTableMediumClutter</path>
+					</li>
+				</extraGraphics>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== 3x3 Table ==================== -->
+
+	<ThingDef ParentName="CosRimTableGatherSpotBase">
+		<defName>CosRim_Vault3x3Table</defName>
+		<label>vault table (3x3)</label>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultTableLarge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5, 5)</drawSize>
+		</graphicData>
+		<size>(3, 3)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<Mass>15</Mass>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+		</statBases>
+		<costList>
+			<Steel>90</Steel>
+		</costList>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== 3x3 Table ==================== -->
+
+	<!-- ==================== 4x2 Table ==================== -->
+
+	<!-- ==================== Single Bed ==================== -->
+
+	<ThingDef ParentName="CosRimBedWithQualityBase">
+		<defName>CosRim_VaultBed</defName>
+		<label>bed (vault)</label>
+		<description>A mattress and sheets on a frame for resting.</description>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,2)</size>
+		<uiIconScale>0.90</uiIconScale>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>30</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<costList>
+			<Steel>45</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+					<li>CosRim_VaultEndTable</li>
+					<li>CosRim_VaultDresser</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Double Bed ==================== -->
+
+	<ThingDef ParentName="CosRimBedWithQualityBase">
+		<defName>CosRim_VaultDoubleBed</defName>
+		<label>double bed (vault)</label>
+		<description>A mattress and sheets on a frame for resting.</description>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultDoubleBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconScale>0.90</uiIconScale>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>50</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+		</statBases>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+		</building>
+		<costList>
+			<Steel>85</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+					<li>CosRim_VaultEndTable</li>
+					<li>CosRim_VaultDresser</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Dining Chair ==================== -->
+
+	<ThingDef ParentName="CosRimArtableFurnitureBase">
+		<defName>CosRim_VaultDiningChair</defName>
+		<label>dining chair (vault)</label>
+		<description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultDiningChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2, 2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<pathCost>30</pathCost>
+		<fillPercent>0.35</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Comfort>0.70</Comfort>
+		</statBases>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<costList>
+			<Steel>45</Steel>
+		</costList>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Styleable" />
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Dresser ==================== -->
+
+	<ThingDef ParentName="CosRimArtableFurnitureBase">
+		<defName>CosRim_VaultDresser</defName>
+		<label>dresser (vault)</label>
+		<description>A dresser. Gives a small comfort bonus to all nearby beds. Placing more than one dresser near the same bed has no effect.</description>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultDresser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>42</pathCost>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>15</Mass>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.05</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>6</maxDistance>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== End Table ==================== -->
+
+	<ThingDef ParentName="CosRimTableBase">
+		<defName>CosRim_VaultEndTable</defName>
+		<label>end table (vault)</label>
+		<description>A small bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultEndTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<surfaceType>Item</surfaceType>
+		<pathCost>30</pathCost>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.05</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Stool ==================== -->
+
+	<ThingDef ParentName="CosRimFurnitureWithQualityBase">
+		<defName>CosRim_VaultStool</defName>
+		<label>stool (vault)</label>
+		<description>A simple platform on which to sit. Not very comfortable, but much better than nothing. Can be used at tables, work stations, and elsewhere.</description>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultStool</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2, 2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<pathCost>30</pathCost>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Comfort>0.5</Comfort>
+		</statBases>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Styleable" />
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Door ==================== -->
+
+	<ThingDef ParentName="CosRimDoorBase">
+		<defName>CosRim_DoorVault</defName>
+		<label>vault auto-door</label>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultDoor</texPath>
+		</graphicData>
+		<uiIconPath>CosmoRim/Buildings/Furniture/VaultDoor_MenuIcon</uiIconPath>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatStructural</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Street Lamp ==================== -->
+
+	<!-- ==================== Floor Lamps ==================== -->
+
+	<ThingDef ParentName="CosRimFurnitureBase">
+		<defName>CosRim_VaultFloorLamp</defName>
+		<label>vault floor lamp</label>
+		<description>Floor mounted lamp, contains advanced anti-tripping features.</description>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/FloorLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>700</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+			<Mass>2</Mass>
+		</statBases>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(217, 217, 217)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>false</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Wall Lamps ==================== -->
+
+	<ThingDef ParentName="CosRimWallLightBase">
+		<defName>CosRim_VaultWallLamp</defName>
+		<label>vault wall lamp</label>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/WallLamp</texPath>
+		</graphicData>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>9</glowRadius>
+						<glowColor>(217, 217, 217)</glowColor>
+						<colorLabel>normal</colorLabel>
+					</li>
+					<li>
+						<glowRadius>9</glowRadius>
+						<glowColor>(78, 226, 229)</glowColor>
+						<colorLabel>darklight</colorLabel>
+					</li>
+					<li>
+						<glowRadius>9</glowRadius>
+						<glowColor>(255, 216, 61)</glowColor>
+						<colorLabel>yellow</colorLabel>
+					</li>
+					<li>
+						<glowRadius>9</glowRadius>
+						<glowColor>(248, 146, 29)</glowColor>
+						<colorLabel>orange</colorLabel>
+					</li>
+					<li>
+						<glowRadius>9</glowRadius>
+						<glowColor>(176, 46, 38)</glowColor>
+						<colorLabel>red</colorLabel>
+					</li>
+					<li>
+						<glowRadius>9</glowRadius>
+						<glowColor>(93, 124, 21)</glowColor>
+						<colorLabel>green</colorLabel>
+					</li>
+					<li>
+						<glowRadius>9</glowRadius>
+						<glowColor>(58, 179, 218)</glowColor>
+						<colorLabel>cyan</colorLabel>
+					</li>
+					<li>
+						<glowRadius>9</glowRadius>
+						<glowColor>(60, 68, 169)</glowColor>
+						<colorLabel>blue</colorLabel>
+					</li>
+					<li>
+						<glowRadius>9</glowRadius>
+						<glowColor>(243, 140, 170)</glowColor>
+						<colorLabel>pink</colorLabel>
+					</li>
+					<li>
+						<glowRadius>9</glowRadius>
+						<glowColor>(137, 50, 183)</glowColor>
+						<colorLabel>purple</colorLabel>
+					</li>
+				</colorOptions>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>false</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Vault Desk ==================== -->
+
+	<ThingDef ParentName="CosRimTableBase">
+		<defName>CosRim_VaultDesk</defName>
+		<label>vault desk</label>
+		<description>Desk with a built in data terminal for performing administrative duties.</description>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/Furniture/VaultDesk</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<size>2,1</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(1,0,1)</interactionCellOffset>
+		<fillPercent>0.5</fillPercent>
+		<neverMultiSelect>true</neverMultiSelect>
+		<statBases>
+			<Mass>21</Mass>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+			<JoyGainFactor>1.1</JoyGainFactor>
+		</statBases>
+		<building>
+			<joyKind>Gaming_Cerebral</joyKind>
+			<forceShowRoomStats>true</forceShowRoomStats>
+		</building>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_ExtraGraphics">
+				<extraGraphics>
+					<li>
+						<label>Default</label>
+						<path>CosmoRim/Buildings/Furniture/VaultDesk</path>
+					</li>
+					<li>
+						<label>Outlander</label>
+						<path>CosmoRim/Buildings/Furniture/VaultDeskCluttered</path>
+					</li>
+				</extraGraphics>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatFurnitureVault</subCategory>
+				<showOnlyInCategory>false</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<JobDef>
+		<defName>CosRim_AdminJoyJob</defName>
+		<driverClass>JobDriver_SitFacingBuilding</driverClass>
+		<reportString>playing zork.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>1</joyMaxParticipants>
+		<joyGainRate>1</joyGainRate>
+		<joySkill>Intellectual</joySkill>
+		<joyXpPerTick>0.002</joyXpPerTick>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+	</JobDef>
+
+	<JoyGiverDef>
+		<defName>CosRim_AdminJoy</defName>
+		<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+		<baseChance>1.5</baseChance>
+		<thingDefs>
+			<li>CosRim_VaultDesk</li>
+		</thingDefs>
+		<jobDef>CosRim_AdminJoyJob</jobDef>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+
+</Defs>

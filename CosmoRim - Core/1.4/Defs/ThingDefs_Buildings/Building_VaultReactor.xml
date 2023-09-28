@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>CosRim_VaultReactor</defName>
+		<label>vault reactor</label>
+		<description>Produces electricity from uranium. The higher the power produced, the more fuel consumed.\n\nDanger: High chance to explode when damaged, this can level an entire bunker even using Vault Walls.</description>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>CosmoRim/Buildings/VaultReactorLarge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6.05,6.05)</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<size>(6,6)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1</fillPercent>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.4</staticSunShadowHeight>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<WorkToBuild>18000</WorkToBuild>
+			<Flammability>0.3</Flammability>
+			<Beauty>-30</Beauty>
+		</statBases>
+		<costList>
+			<Steel>400</Steel>
+			<Plasteel>40</Plasteel>
+			<Uranium>20</Uranium>
+			<ComponentSpacer>18</ComponentSpacer>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-9000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>CosRim_CosmoRim</designationCategory>
+		<!-- <placeWorkers>
+			<li>PlaceWorker_OnSteamGeyser</li>
+		</placeWorkers> -->
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>CosRim_VaultPowerSystems</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_SubCategoryBuilding">
+				<subCategory>CosRim_SubCatPower</subCategory>
+				<showOnlyInCategory>true</showOnlyInCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

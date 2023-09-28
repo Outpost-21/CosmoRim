@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef ParentName="CosRim_ResearchBaseMain">
+		<defName>CosRim_VaultConstruction</defName>
+		<label>Vault Construction</label>
+		<description>Unlocks the building of Vault walls and doors, including larger manual vault doors.</description>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<baseCost>6000</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+		<ResearchProjectDef ParentName="CosRim_ResearchBaseMain">
+			<defName>CosRim_VaultPowerSystems</defName>
+			<label>Vault Power Systems</label>
+			<description>Unlocks the building of Vault reactors and batteries, large efficient power production and storage.</description>
+			<prerequisites>
+				<li>CosRim_VaultConstruction</li>
+			</prerequisites>
+			<baseCost>8000</baseCost>
+			<researchViewX>1</researchViewX>
+			<researchViewY>0</researchViewY>
+		</ResearchProjectDef>
+
+		<ResearchProjectDef ParentName="CosRim_ResearchBaseMain">
+			<defName>CosRim_VaultDefenceSystems</defName>
+			<label>Vault Defence Systems</label>
+			<description>Unlocks the building of an insectoid thumper, which deters insectoid infestations as long as it remains powered.</description>
+			<prerequisites>
+				<li>CosRim_VaultConstruction</li>
+			</prerequisites>
+			<baseCost>4000</baseCost>
+			<researchViewX>1</researchViewX>
+			<researchViewY>0.5</researchViewY>
+		</ResearchProjectDef>
+
+		<ResearchProjectDef ParentName="CosRim_ResearchBaseMain">
+			<defName>CosRim_VaultCommsSystems</defName>
+			<label>Vault Comms Systems</label>
+			<description>Unlocks the building of a macro comms console, which doubles as an orbital beacon using the home zone to find tradeable items instead of a small radius around it.</description>
+			<prerequisites>
+				<li>CosRim_VaultConstruction</li>
+			</prerequisites>
+			<baseCost>2000</baseCost>
+			<researchViewX>1</researchViewX>
+			<researchViewY>1</researchViewY>
+		</ResearchProjectDef>
+
+		<ResearchProjectDef ParentName="CosRim_ResearchBaseMain">
+			<defName>CosRim_VaultEnvironmentalSystems</defName>
+			<label>Vault Environmental Systems</label>
+			<description>Unlocks the building of vault temperature control networks, piped heating and cooling.</description>
+			<prerequisites>
+				<li>CosRim_VaultConstruction</li>
+			</prerequisites>
+			<baseCost>1000</baseCost>
+			<researchViewX>1</researchViewX>
+			<researchViewY>1.5</researchViewY>
+		</ResearchProjectDef>
+
+		<ResearchProjectDef ParentName="CosRim_ResearchBaseMain">
+			<defName>CosRim_VaultFurniture</defName>
+			<label>Vault Furniture</label>
+			<description>Unlocks the building of vault furniture, including self powered lighting and wall mounted utilities.</description>
+			<prerequisites>
+				<li>CosRim_VaultConstruction</li>
+			</prerequisites>
+			<baseCost>1000</baseCost>
+			<researchViewX>1</researchViewX>
+			<researchViewY>2</researchViewY>
+		</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="CosRim_ResearchBaseMain">
+		<defName>CosRim_VaultArmoury</defName>
+		<label>Vault Armoury</label>
+		<description>Unlocks the crafting of vaulter apparel and weapons at the vault workbench.</description>
+		<prerequisites>
+			<li>CosRim_VaultConstruction</li>
+		</prerequisites>
+		<baseCost>2000</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.5</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Air Generator</name>
+	<author>Neronix17</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>Neronix17.CosmoRim.AirGenerator</packageId>
+	<description>Standalone version of the Air Generator from CosmoRim.</description>
+	<incompatibleWith>
+		<li>Neronix17.CosmoRim.Core</li>
+	</incompatibleWith>
+</ModMetaData>

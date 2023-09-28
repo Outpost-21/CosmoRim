@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<ThingDef ParentName="CosmoRim_UniformBodyFabricatedBase">
+		<defName>CosmoRim_VaultMedicalSuit</defName>
+		<label>vault medical suit</label>
+		<description>A full body medical suit. Combined with hood protects the wearer from environmental dangers.</description>
+		<graphicData>
+			<texPath>CosmoRim/Apparel/VaultMedic/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>CosRim_VaultArmoury</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<tags Inherit="False">
+				<li>VaulterApparel</li>
+				<li>VaulterMedical</li>
+			</tags>
+			<wornGraphicPath>CosmoRim/Apparel/VaultMedic/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="CosmoRim_UniformHeadwearFabricatedBase">
+		<defName>CosmoRim_VaultMedicalHood</defName>
+		<label>vault medical hood</label>
+		<description>A full head medical hood. Combined with suit protects the wearer from environmental dangers.</description>
+		<graphicData>
+			<texPath>CosmoRim/Apparel/VaultMedic/Head</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>CosRim_VaultArmoury</researchPrerequisite>
+		</recipeMaker>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<tags Inherit="False">
+				<li>VaulterApparel</li>
+				<li>VaulterMedical</li>
+			</tags>
+			<wornGraphicPath>CosmoRim/Apparel/VaultMedic/Head</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255, 255, 255)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+</Defs>
