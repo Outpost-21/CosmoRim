@@ -7,6 +7,16 @@
 	</supportedVersions>
 	<packageId>Neronix17.CosmoRim.Vaulters</packageId>
 	<description>Expansive mod adding a large variety of industrial/spacer focused buildings, apparel, weapons and more.</description>
+	<modDependencies>
+		<li>
+			<packageId>Neronix17.Asimov</packageId>
+			<displayName>Asimov</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Neronix17.Asimov</li>
+	</loadAfter>
 	<incompatibleWith>
 		<li>Neronix17.CosmoRim.AirGenerator</li>
 		<li>Neronix17.CosmoRim.MicroCommsConsole</li>

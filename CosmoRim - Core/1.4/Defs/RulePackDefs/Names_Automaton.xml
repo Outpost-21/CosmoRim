@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>CosmoRim_Namer_Buddy</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[BD_Letter][BD_Letter][BD_Dash][BD_Number][BD_Number][BD_Number][BD_Number]</li>
+
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>BD_Letter</keyword>
+					<path>OuterRim/Droids/NamePartLetter</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>BD_Number</keyword>
+					<path>OuterRim/Droids/NamePartNumber</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>BD_Dash</keyword>
+					<path>OuterRim/Droids/NamePartDash</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+</Defs>

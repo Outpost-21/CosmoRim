@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<Asimov.PawnDef ParentName="BasePawn" Name="CosmoRim_BaseHumanoidAutomaton" Abstract="True">
+		<!-- Start of Asimov Data -->
+		<pawnSettings>
+			<immuneToAge>true</immuneToAge>
+			<generateRelations>false</generateRelations>
+			<!-- Styles -->
+			<allowHair>false</allowHair>
+			<allowBeards>false</allowBeards>
+			<allowTattoos>false</allowTattoos>
+			<!-- Traits -->
+			<onlyRestrictedTraits>true</onlyRestrictedTraits>
+			<traits />
+			<!-- Thoughts -->
+			<onlyRestrictedThoughts>true</onlyRestrictedThoughts>
+			<thoughts />
+			<!-- Backstories -->
+			<onlyRestrictedBackstories>true</onlyRestrictedBackstories>
+			<backstories>
+				<li>PALBuddyBackstory</li>
+			</backstories>
+		</pawnSettings>
+		<!-- End of Asimov Data -->
+		<statBases>
+			<Flammability>0.1</Flammability>
+			<ComfyTemperatureMin>-250</ComfyTemperatureMin>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<ToxicResistance>1</ToxicResistance>
+			<ImmunityGainSpeed>100</ImmunityGainSpeed>
+			<PainShockThreshold>10</PainShockThreshold>
+		</statBases>
+		<race>
+			<fleshType>Asimov_Automaton</fleshType>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>100000</lifeExpectancy>
+			<leatherDef>Leather_Human</leatherDef>
+			<bloodDef>CosmoRim_AutomatonCoolant</bloodDef>
+			<body>CosmoRim_HumanoidAutomaton</body>
+			<useMeatFrom>Human</useMeatFrom>
+			<foodType>None</foodType>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>CosmoRim_HumanoidAutomaton</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(1,100)</li>
+					<li>(2,100)</li>
+					<li>(4,30)</li>
+					<li>(5,10)</li>
+					<li>(10,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>Asimov_Automaton</li>
+				<li>CosmoRim_Automaton</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>RemoveBodyPart</li>
+		</recipes>
+		<comps>
+			<li Class="Asimov.CompProperties_Hibernation" />
+		</comps>
+		<modExtensions>
+			<li Class="Asimov.DefModExt_EnergyNeed" />
+			<li Class="TabulaRasa.DefModExt_DiseaseImmunity">
+				<hediffs>
+					<li>WoundInfection</li>
+					<li>BadBack</li>
+					<li>Frail</li>
+					<li>Cataract</li>
+					<li>HearingLoss</li>
+					<li>Blindness</li>
+					<li>Dementia</li>
+					<li>Alzheimers</li>
+					<li>Asthma</li>
+					<li>HeartArteryBlockage</li>
+					<li>Carcinoma</li>
+					<li>GutWorms</li>
+					<li>MuscleParasites</li>
+					<li>FibrousMechanites</li>
+					<li>SensoryMechanites</li>
+					<li>Flu</li>
+					<li>Plague</li>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>TraumaSavant</li>
+					<li>ChemicalDamageModerate</li>
+					<li>ChemicalDamageSevere</li>
+					<li>Cirrhosis</li>
+					<li>ResurrectionPsychosis</li>
+					<li>Scaria</li>
+					<li>WaterInEyes</li>
+				</hediffs>
+			</li>
+		</modExtensions>
+	</Asimov.PawnDef>
+
+</Defs>

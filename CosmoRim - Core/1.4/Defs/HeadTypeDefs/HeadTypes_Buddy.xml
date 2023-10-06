@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef Name="CosmoRim_AutomatonHeadBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>None</gender>
+		<hairMeshSize>(1.5, 1.5)</hairMeshSize>
+		<beardMeshSize>(1.5, 1.5)</beardMeshSize>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="CosmoRim_AutomatonHeadBase">
+		<defName>CosmoRim_Head_BuddyBasic</defName>
+		<graphicPath>CosmoRim/Pawn/Automaton/PAL/Buddy/Head/Normal</graphicPath>
+		<modExtensions Inherit="False">
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+				<shaderType>CutoutComplex</shaderType>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+</Defs>

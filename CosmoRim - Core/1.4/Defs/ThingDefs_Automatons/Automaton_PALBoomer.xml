@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="AsimovAutomatonBase">
+		<defName>CosmoRim_PALBoomer</defName>
+		<label>PAL Boomer</label>
+		<description>TODO</description>
+		<statBases>
+			<MoveSpeed>5.3</MoveSpeed>
+			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<PsychicSensitivity>0</PsychicSensitivity>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<body>OuterRim_QuadWheeledDroid</body>
+			<baseBodySize>0.5</baseBodySize>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<!-- <soundWounded>OuterRim_Droid_MSE_Wounded</soundWounded>
+					<soundDeath>OuterRim_Droid_MSE_Death</soundDeath>
+					<soundCall>OuterRim_Droid_MSE_Call</soundCall> -->
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>3000~20000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		</race>
+		<comps>
+			<li Class="Asimov.CompProperties_Automaton">
+				<canUseRanged>false</canUseRanged>
+				<canUseMelee>false</canUseMelee>
+				<corpseEdible>false</corpseEdible>
+				<corpseRots>false</corpseRots>
+				<affectedByEMP>true</affectedByEMP>
+				<immuneToDisease>true</immuneToDisease>
+				<huntTarget>true</huntTarget>
+				<clearPassions>true</clearPassions>
+				<flattenSkills>true</flattenSkills>
+				<skillGainMulti>0</skillGainMulti>
+				<skillLossMulti>0</skillLossMulti>
+				<defaultSkillLevel>0</defaultSkillLevel>
+				<enabledWorkTypes>
+					<li>Hauling</li>
+					<li>Cleaning</li>
+				</enabledWorkTypes>
+				<repairThings>
+					<li>Steel</li>
+				</repairThings>
+			</li>
+			<li Class="Asimov.CompProperties_RecolourablePawn">
+				<channelOne>true</channelOne>
+				<channelTwo>false</channelTwo>
+				<skinColorPairs>
+					<li>
+						<!-- Default Factory Colours -->
+						<colorOne>(209, 177, 88)</colorOne>
+						<colorTwo>(209, 177, 88)</colorTwo>
+						<weight>100</weight>
+					</li>
+				</skinColorPairs>
+			</li>
+		</comps>
+		<!-- Butcher Products should be set to 1/4th the costs -->
+		<butcherProducts>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Steel>20</Steel>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AsimovAutomatonKindBase">
+		<defName>CosmoRim_PALBoomer</defName>
+		<label>PAL Boomer</label>
+		<race>CosmoRim_PALBoomer</race>
+		<combatPower>99999</combatPower>
+		<isFighter>false</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>CosmoRim/Pawn/Automaton/PAL/Boomer/PALBoomer</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

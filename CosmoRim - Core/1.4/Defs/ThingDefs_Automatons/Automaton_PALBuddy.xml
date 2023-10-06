@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<Asimov.PawnDef ParentName="CosmoRim_BaseHumanoidAutomaton">
+		<defName>CosmoRim_PALBuddy</defName>
+		<label>PAL Buddy</label>
+		<description>The PAL systems Buddy is the latest in humanoid domestic assistance, programmed with behavioural subroutines for all sorts of day to day tasks leaving you free to do whatever brings you joy! Buddy is even prepared with social capabilities and can behave entirely like a real friend for you.\n\nDisclaimer: Buddy and associated autonomous PAL products are NOT sentient, while they may seem to be at times, they are simply pretending, there is nothing to worry about!</description>
+		<!-- Start of Asimov Data -->
+		<pawnSettings>
+			<!-- Body -->
+			<headTypeWhitelist>
+				<li>CosmoRim_Head_BuddyBasic</li>
+			</headTypeWhitelist>
+			<bodyTypeWhitelist>
+				<li>Thin</li>
+			</bodyTypeWhitelist>
+		</pawnSettings>
+		<customGraphics>
+			<bodyPath>CosmoRim/Pawn/Automaton/PAL/Buddy/Body/</bodyPath>
+			<shaderType>CutoutComplex</shaderType>
+			<skinColorPairs>
+				<li>
+					<!-- Default Factory Colours -->
+					<colorOne>(209, 177, 88)</colorOne>
+					<colorTwo>(209, 177, 88)</colorTwo>
+					<weight>100</weight>
+				</li>
+			</skinColorPairs>
+		</customGraphics>
+		<comps>
+			<li Class="Asimov.CompProperties_Automaton">
+				<canUseRanged>false</canUseRanged>
+				<canUseMelee>false</canUseMelee>
+				<corpseEdible>false</corpseEdible>
+				<corpseRots>false</corpseRots>
+				<affectedByEMP>true</affectedByEMP>
+				<immuneToDisease>true</immuneToDisease>
+				<huntTarget>true</huntTarget>
+				<clearPassions>true</clearPassions>
+				<flattenSkills>true</flattenSkills>
+				<skillGainMulti>0</skillGainMulti>
+				<skillLossMulti>0</skillLossMulti>
+				<defaultSkillLevel>0</defaultSkillLevel>
+				<enabledWorkTypes>
+					<li>Construction</li>
+					<li>Mining</li>
+					<li>Crafting</li>
+					<li>Cooking</li>
+					<li>Tailoring</li>
+					<li>Art</li>
+					<li>Smithing</li>
+					<li>Hauling</li>
+					<li>Cleaning</li>
+					<li>Firefighter</li>
+				</enabledWorkTypes>
+				<skillSettings>
+					<li>
+						<skill>Crafting</skill>
+						<level>6</level>
+					</li>
+					<li>
+						<skill>Cooking</skill>
+						<level>6</level>
+					</li>
+					<li>
+						<skill>Mining</skill>
+						<level>6</level>
+					</li>
+					<li>
+						<skill>Construction</skill>
+						<level>6</level>
+					</li>
+				</skillSettings>
+				<repairThings>
+					<li>Steel</li>
+				</repairThings>
+				<disabledNeeds>
+					<li>Mood</li>
+					<li>Food</li>
+					<li>Rest</li>
+					<li>Joy</li>
+					<li>Beauty</li>
+					<li>Comfort</li>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>DrugDesire</li>
+					<li>RoomSize</li>
+				</disabledNeeds>
+			</li>
+			<li Class="Asimov.CompProperties_RecolourablePawn">
+				<channelOne>true</channelOne>
+				<channelTwo>false</channelTwo>
+			</li>
+		</comps>
+		<!-- End of Asimov Data -->
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<MoveSpeed>4.2</MoveSpeed>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<nameGenerator>CosmoRim_Namer_Buddy</nameGenerator>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+		</race>
+		<butcherProducts>
+			<!-- <CosmoRim_DroidBrain>1</CosmoRim_DroidBrain> -->
+			<ComponentSpacer>2</ComponentSpacer>
+			<Steel>30</Steel>
+		</butcherProducts>
+	</Asimov.PawnDef>
+
+	<PawnKindDef>
+		<defName>CosmoRim_PALBuddy</defName>
+		<label>PAL Buddy</label>
+		<race>CosmoRim_PALBuddy</race>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>PALBuddyBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags Inherit="false" />
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>0~0</apparelMoney>
+		<techHediffsChance>0.0</techHediffsChance>
+		<techHediffsMoney>0~0</techHediffsMoney>
+		<techHediffsTags Inherit="false" />
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>30~40</initialResistanceRange>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<clearApparel>True</clearApparel>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+</Defs>

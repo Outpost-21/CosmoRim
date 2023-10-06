@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HediffGiverSetDef>
+		<defName>CosmoRim_Automaton</defName>
+		<hediffGivers>
+			<li Class="HediffGiver_Birthday">
+				<hediff>CosmoRim_Automaton</hediff>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+
+	<HediffDef>
+		<defName>CosmoRim_Automaton</defName>
+		<label>automaton stats</label>
+		<description>Background stats for all automatons, doing things that can only easily be applied via a hidden hediff.</description>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<painFactor>0</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

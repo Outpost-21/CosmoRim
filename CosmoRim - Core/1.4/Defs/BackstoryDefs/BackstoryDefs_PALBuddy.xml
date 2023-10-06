@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- ============================ B1 Childhoods ========================== -->
+
+	<BackstoryDef>
+		<defName>CosmoRim_BackstoryBuddyChild</defName>
+		<title>PAL Buddy</title>
+		<titleShort>Buddy</titleShort>
+		<baseDesc>TODO</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<spawnCategories>
+			<li>PALBuddyBackstory</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<!-- ============================ B1 Adulthoods ========================== -->
+
+	<BackstoryDef>
+		<defName>CosmoRim_BackstoryBuddyAdult</defName>
+		<title>Old PAL Buddy</title>
+		<titleShort>Old Buddy</titleShort>
+		<baseDesc>TODO</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<spawnCategories>
+			<li>PALBuddyBackstory</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+</Defs>
