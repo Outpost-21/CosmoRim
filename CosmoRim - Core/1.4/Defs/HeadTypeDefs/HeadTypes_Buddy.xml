@@ -6,12 +6,15 @@
 		<gender>None</gender>
 		<hairMeshSize>(1.5, 1.5)</hairMeshSize>
 		<beardMeshSize>(1.5, 1.5)</beardMeshSize>
+		<modExtensions>
+			<li MayRequire="Neronix17.UI.PawnAdjuster" Class="PawnAdjust.DefModExt_HideInAdjuster" />
+		</modExtensions>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="CosmoRim_AutomatonHeadBase">
 		<defName>CosmoRim_Head_BuddyBasic</defName>
 		<graphicPath>CosmoRim/Pawn/Automaton/PAL/Buddy/Head/Normal</graphicPath>
-		<modExtensions Inherit="False">
+		<modExtensions>
 			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
 				<useSkinShader>false</useSkinShader>
 				<shaderType>CutoutComplex</shaderType>
